@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+<title>Jogo da Forca</title>
+<meta charset="UTF-8">
+<script src="jogodeforca.js"></script>
+</head>
+<body>
+<h1>Jogo da forca - Adivinhe a palavra secreta!</h1>
+<form method="POST" action="trabalho9.py">
+<p><input type="button" value="Digite a palavra secreta" onclick="palavra=(prompt('Digite a palavra',''))">
+<h2>Digite uma dica:</h2>
+<p><input type="button" value="Digite a dica 1" onclick="dica1=(prompt('Digite a dica da palavra secreta',''))">
+<input type="button" value="Digite a dica 2" onclick="dica2=(prompt('Digite a dica 2',''))"/>
+<input type="button" value="Digite a dica 3" onclick="dica3=(prompt('Digite a dica 3',''))"/>
+<p><input type="button" value="Mostre a dica 1" onclick="funcao(this.form.Area)"/>
+<input type="button" value="Mostre a dica 2" onclick="funcao2(this.form.Area)"/>
+<input type="button" value="Mostre a dica 3" onclick="funcao3(this.form.Area)"/>
+<p><textarea rows=5 cols=60 name="Area"></textarea></p>
+<h2>Resultado:</h2>
+<p><input type="button" value="Tente a sorte" onclick="resp=(prompt('Digite o resultado',''))"/>
+<input type="button" value="Resultado" onclick="resultado(this.form.Area)"/>
+
+<p><textarea rows=5 cols=60 name="Area2"></textarea></p>
+</form>
+
+</body>
+</html>
